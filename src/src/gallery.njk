@@ -1,0 +1,52 @@
+---
+layout: layout.html
+title: Gallery
+description: Gallery showning appetizers of naan, ashak, and samosas.  In addition to our wrapped sanwiches such as the Gyro wrap and King Gyro sandwich.  We serve only halal meat.
+keywords: gallery,halal,naan,karahi,afghan,kabob,falafel,samosa,ashak,gyro,shami,chicken kabob,buffet platter
+collection: galleryImages
+---
+<div class="box-full-dark" id="boxGallery">
+	<div class="container">		
+		<div class="row">
+			<div class="row-same-height-1">
+				{% set rowIndexer = cycler(1,2,3) %}
+				{% for item in galleryImages  %}
+				{% set imagePath = (item.path | replace('\\', '/') ) %}
+				<div class="img-hold col-md-3 col-sm-4 col-sm-height col-xs-12">
+					<img class="img-responsive img-rounded lazy" src="../images/loading.gif" data-src="../{{imagePath}}" /></div>
+					{% set newRow = rowIndexer.next() %}
+					{% if newRow == 3 %}
+						</div><div class="row-same-height">
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="box-full-darker">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>See us today! </h2>
+        <p>Our traditional made modern dishes, seasoned with special spices, keeps customers coming back.  We're proud of this fact and like to thank our customers for their patronage.</p> 
+		<hr/>
+	</div>
+    </div>
+    
+    <div class="row" style="padding-top:1%;">
+		<div class="col-md-4 text-center">
+			<a id="btnGalleryCatering" href="/catering/" class="btn btn-lg btn-primary fa-2x btn-block gtrack">Catering Services</a>
+		</div>
+		<div class="col-md-4 text-center">
+			<br class="visible-xs" />
+			<a id="btnGalleryMenu" href="{{eat24}}" class="btn btn-lg btn-danger fa-2x btn-block gtrack">Menu / Order Online</a>
+		</div>
+		<div class="col-md-4 text-center">
+			<br class="visible-xs" />
+			<a id="btnGalleryContactUs" href="/contactus/" class="btn btn-lg btn-primary fa-2x btn-block gtrack">Contact Us</a>
+		</div>
+    </div>
+  </div>
+</div>
+

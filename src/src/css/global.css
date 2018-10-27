@@ -1,0 +1,345 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(/fonts/opensans.woff) format('woff');
+}
+
+body, html{
+    background-color: #F5F5F5;
+    width:100%;
+    height:100%;
+}
+body, html,p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+
+
+blockquote { font-size:98%; }
+address { padding:0; margin:0; }
+h1 {
+    color: #009B2C;
+}
+h2 {
+    color: #4E0808;
+}
+
+h3 {
+    color: #009B2C;
+	font-size:180%;
+}
+
+a {color:#0A4468;}
+a:hover {color:#0A4468; }
+
+#footer a { color:#555555; }
+#footer a:hover {
+    text-decoration:none;
+    text-shadow: 4px 4px 8px #555555;
+}
+
+#footer .fa-ul { font-size:105%; }
+#footer .fa-ul li { margin-top:7px;}
+#footer .fa-ul a:hover i { color: #004E16; }
+
+.facebook { color: #3B59B3;}
+.yelp { color:#CE1200;}
+.googleplus {color:#C0503A;}
+
+#rowMobileSocial{ padding-bottom:2%;}
+
+#footer .facebook:hover i {color:  #3B59B3 !important;}
+#footer .yelp:hover i {color:#CE1200 !important;}
+#footer .googleplus:hover i {color:#C0503A !important;}
+
+
+#homeActionList li {
+    margin-bottom:4%;
+    font-size:130%;
+}
+
+.mobileGalleryText {font-size: 94% !important;}
+
+.box-full-light {
+    background-color: #F5F5F5;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.box-full-dark {
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.box-full-darker {
+    background-color: #555555;
+    color:white;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.box-full-darker h1, .box-full-darker h3 { color:white;}
+
+.box-full-darker h2 {
+    color: white;
+    font-style:italic;
+}
+
+#navMobileBars .btn i.fa { display:block; }
+#navMobileBars .btn span.fa {	display:none;}
+#navMobileBars .btn.active i.fa {	display:none;}
+#navMobileBars .btn.active span.fa { display:block;}
+
+
+
+@media (min-width: 768px) { 
+    #carousel-home img {max-height:200px !important;}
+}
+
+.carousel-indicators .active{ background: #1A6830; } 
+.carousel-indicators li{ border :1px solid #ccc; } 
+.carousel-control{ color:#1A6830; width:5%; }
+.carousel-control:hover, .carousel-control:focus{ color:#004E16; } 
+.carousel-control.left, .carousel-control.right { background-image: none; } 
+
+#pageContent { background: #ffffff; }
+
+.btn-danger {
+    background-color:#9B0000;
+    border-color:#B51A1A;
+}
+
+
+
+
+#boxGallery .img-hold { margin-bottom:3%;}
+
+.logo-responsive  {
+    width:auto;
+    max-height: 100px;
+    padding:1%;
+}
+
+.blackMobileWhiteDesktop {color:black;}
+.paddingTopMobile { margin-top: 2%; }
+.scalePaddingRightMobile {padding-right:1% !important;}
+.scalePaddingLeftMobile {padding-left:1% !important;}
+
+@media (max-width: 768px) {
+  .navbar {
+		background-color: white;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		bottom: auto;
+		z-index:100;
+		border-bottom: 2px solid #eee;
+	}
+	body{ margin-top:120px;}
+}
+
+
+@media (min-width: 768px) {
+    .paddingTopMobile {  margin-top:0;}
+    .logo-responsive { 
+        max-height:130px; 
+        padding:0;
+    }
+    .navbar {
+        padding-top:1%;
+    }
+	.nav > li > a:focus, .nav > li > a {
+		font-size:115%;
+	}
+
+    .box-full-dark {
+        background-color: #4E0808;
+    }
+
+    #boxGallery .img-hold { height:200px;}
+
+    .blackMobileWhiteDesktop {
+        color:white;
+    }
+}
+
+#btnHeaderMenu {
+    background-color:#9B0000;
+    color:white;
+}
+#btnHeaderMenu:hover {
+    background-color:#4E0808;
+}
+
+/* menu nav */
+.nav > li > a:focus, .nav > li > a {
+    color:#555555;
+    font-size:140%;
+}
+
+/* columns of same height styles - http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height*/
+
+.row-full-height {
+  height: 100%;
+}
+.col-full-height {
+  height: 100%;
+  vertical-align: middle;
+}
+.row-same-height {
+  display: table;
+  width: 100%;
+  /* fix overflow */
+  table-layout: fixed;
+  padding-bottom:2%;
+}
+.col-xs-height {
+  display: table-cell;
+  float: none !important;
+}
+
+@media (min-width: 768px) {
+  .col-sm-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+
+.parallax-content{
+	font-size:105%;
+	text-align:justify;
+}
+
+.parallax-content .row {
+	padding-top: 4%;
+}
+
+
+.parallax-content .fa-stack{ color:#9B0000; }
+.parallax-content .fa-stack  .fa-inverse{ color:#e8e8e8;}
+.parallax-content .btn-link { color: #555;}
+
+/** 
+primary 9B0000
+secondary (darker) 4E0808
+gold A8A611
+blue 0A4468
+lighter blue 0C93E7
+green 009B2C
+darker green 004E16
+**/
+
+
+.parallax {
+  height: 200px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 120%;
+  line-height: 200px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.parallax-content h1, .parallax-content h2 { padding:0; margin:0;
+}
+
+.parallax-content hr{
+	width:100%; 
+	border-color:#999;
+}
+.parallax-1 , .parallax-2, .parallax-3 { display:none;}
+
+.parallax-1 {
+  background-image: url("/images/parallax/P1010240.jpg");
+}
+.parallax-2 {
+  background-image: url("/images/parallax/bread.jpg");
+}
+.parallax-3 {
+  background-image: url("../img/demo/_small/file000691610646.jpg");
+}
+
+.parallax-join-club {
+  color:black;
+  font-size:130%;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+@media (min-width: 768px) {
+  
+  
+  .form-club-join .form-control{
+    min-width: 400px;
+    
+  } 
+  
+  .parallax-join-club {
+    height: 180px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url("/images/grilled-chicken-salad-banner.jpg");
+    color:white;
+    text-shadow: 2px 2px #555;   
+    font-size: 350%;
+    line-height: 160px;
+    width:100%; 
+  }  
+  
+}
+#keepInTouchList  hr{ border-color:#DDDDDD;}
+
+
+@media all and (min-width: 600px) {
+  
+  .parallax h1 {
+    font-size: 300%;
+  }
+  .parallax {
+	height: 400px;
+  }
+  .parallax h1  {
+	line-height: 400px;
+  }
+  .parallax-1 , .parallax-2, .parallax-3 { display:block;}
+}
+
+
+
+
+
+
+
