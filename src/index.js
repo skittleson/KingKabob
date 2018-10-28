@@ -63,8 +63,7 @@ Metalsmith(__dirname)
   .use(markdown())
   .use(
     permalinks({
-      relative: false,
-      //pattern: ":title" //great for blogs
+      relative: false
     })
   )
     .build(function(err, files) {
