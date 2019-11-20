@@ -20,8 +20,8 @@ Metalsmith(__dirname)
       "king kabob,fairfax restaurants,buffet,kabob,shish kabob,middle eastern,afghan,halal,food delivery,fairfax va,caters,karahi,kebab",
     url: "http://king-kabob.com/",
     phone: "+1 (703) 359-8231",
-    eat24: "http://eat24hrs.com/restaurants/7560",
-    year: "2018",
+    eat24: "https://www.ezcater.com/catering/pvt/king-kabob-fairfax",
+    year: "2019",
     location: {
       address: "10250 Main St.",
       city: "Fairfax",
